@@ -1,0 +1,49 @@
+.right-align {
+    text-align: right;
+}
+
+.d-flex.justify-content-end.mb-3 {
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.d-flex.justify-content-end.mb-3 a.btn {
+    padding: 10px 20px;
+}
+
+
+.gif-title-container {
+    display: flex;
+    align-items: center; /* Alineación vertical del título y el GIF */
+    margin-bottom: 1rem; 
+}
+
+.gif-title-container img {
+    max-width: 100%; /* Hace que el GIF sea responsivo */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin-right: 10px; /* Espaciado entre el GIF y el título */
+}
+
+/* Estilos generales */
+h1.gif-title { 
+    margin: 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px; /* Tamaño de letra por defecto */
+    color: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1.gif-title {
+        font-size: 20px; /* Tamaño de letra más pequeño para móviles */
+    }
+
+    .gif-title-container img {
+        width: 80%; /* Reduce el tamaño del GIF para pantallas pequeñas */
+        max-width: 50%; /* Asegura que no exceda el ancho del contenedor */
+    }
+}
